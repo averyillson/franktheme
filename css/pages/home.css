@@ -1,0 +1,38 @@
+html { font-size: 1vw; }
+
+body { min-height: 100vh; position: relative; }
+
+.entry-content { margin: 0; }
+
+header { position: fixed; }
+
+.quote-block { position: relative; height: 100vh; }
+
+.quote-block .quote-main { position: absolute; top: 20rem; right: 30rem; font-size: 3rem; z-index: 10; -webkit-transition: .25s -webkit-filter linear; -moz-transition: .25s -moz-filter linear; -moz-transition: .25s filter linear; -ms-transition: .25s -ms-filter linear; -o-transition: .25s -o-filter linear; transition: .25s filter linear, .25s -webkit-filter linear; filter: blur(0); cursor: pointer; animation-name: slideinright; animation-duration: 10s; }
+
+.quote-block .quote-main.blurry { filter: blur(3px); }
+
+@keyframes slideinright { 0% { right: 40rem;
+    opacity: 0; }
+  100% { right: 30rem;
+    opacity: 1; } }
+
+.quote-block .quote-name { position: absolute; top: 27rem; right: 27rem; z-index: 5; -webkit-transition: .25s -webkit-filter linear; -moz-transition: .25s -moz-filter linear; -moz-transition: .25s filter linear; -ms-transition: .25s -ms-filter linear; -o-transition: .25s -o-filter linear; transition: .25s filter linear, .25s -webkit-filter linear; filter: blur(8px); animation-name: slideinleft; animation-duration: 10s; }
+
+.quote-block .quote-name.blurry { filter: blur(0px); }
+
+@keyframes slideinleft { 0% { right: 20rem;
+    opacity: 0; }
+  100% { right: 27rem;
+    opacity: 1; } }
+
+.quote-block .quote-image { position: absolute; margin: auto; top: 0; left: 0; right: 0; z-index: 0; width: 40%; -webkit-transition: .25s -webkit-filter linear; -moz-transition: .25s -moz-filter linear; -moz-transition: .25s filter linear; -ms-transition: .25s -ms-filter linear; -o-transition: .25s -o-filter linear; transition: .25s filter linear, .25s -webkit-filter linear; filter: blur(8px); animation-name: slideinleft2; animation-duration: 10s; }
+
+.quote-block .quote-image.blurry { filter: blur(0px); }
+
+@keyframes slideinleft2 { 0% { right: -8rem;
+    opacity: 0; }
+  100% { right: 0;
+    opacity: 1; } }
+
+footer { position: absolute; bottom: 0; }
