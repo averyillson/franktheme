@@ -3,7 +3,7 @@ Theme Name: Frank.
 Theme URI: http://underscores.me/
 Author: Christopher Wong
 Author URI: http://frankyou.com
-Description: Frank\'s theme.
+Description: Frank's theme.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -22,7 +22,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Varaiables
 # Normalize
 # Typography
 # Elements
@@ -41,9 +40,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Variables
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -231,9 +227,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -241,9 +237,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -252,9 +248,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -304,8 +300,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -315,8 +311,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -324,7 +320,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -334,7 +330,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -399,12 +395,12 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: 'Neuton',serif;
+  font-family: "Neuton", serif;
 }
 
 p {
   margin-bottom: 1.5em;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 dfn, cite, em, i {
@@ -449,11 +445,6 @@ mark, ins {
 
 big {
   font-size: 125%;
-}
-
-@font-face {
-  font-family: 'Windsor BT';
-  src: url("fonts/WindsorBTRoman.ttf");
 }
 
 /*--------------------------------------------------------------
@@ -529,9 +520,9 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -540,63 +531,60 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
+  padding: 0.6em 1em 0.4em;
 }
-
 button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
   border-color: #ccc #bbb #aaa;
 }
-
 button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
 textarea:focus {
   color: #111;
 }
@@ -618,19 +606,15 @@ textarea {
 a {
   color: royalblue;
 }
-
 a:visited {
   color: purple;
 }
-
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
-
 a:focus {
   outline: thin dotted;
 }
-
 a:hover, a:active {
   outline: 0;
 }
@@ -638,123 +622,19 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  overflow: visible;
-  position: fixed;
-  top: 5rem;
-  right: 2rem;
-  z-index: 100;
-}
-
-.main-navigation .main-menu-button {
-  color: black;
-  text-decoration: none;
-  font-size: 2rem;
-  z-index: 101;
-  position: relative;
-  transition: all .5s ease;
-  margin-right: 0;
-  margin-top: 0;
-  transition-property: margin-right;
-}
-
-.main-navigation hr {
-  position: fixed;
-  display: block;
-  border-top: 2px solid;
-  color: black;
-  top: 5rem;
-  right: 2rem;
-  width: 15vw;
-  z-index: 101;
-  transition: all .5s ease;
-  pointer-events: none;
-}
-
-.main-navigation #main-nav-panel {
-  position: fixed;
+.nav-container {
+  background-color: black;
+  position: absolute;
   top: 0;
   right: 0;
+  width: 450px;
   bottom: 0;
-  width: 0;
-  background-color: black;
-  color: white;
-  transition: width .5s ease, padding .5s ease;
-  overflow: hidden;
+  z-index: 1000;
+  padding: 2rem;
 }
-
-.main-navigation #main-nav-panel .nav-list {
-  position: absolute;
-  top: 50%;
-  left: 5rem;
-  transform: translateY(-50%);
-  margin: auto;
-  width: 25vw;
-}
-
-.main-navigation #main-nav-panel .nav-list #primary-menu {
-  padding: 0;
-  margin: 0;
-}
-
-.main-navigation #main-nav-panel .nav-list #primary-menu li {
-  list-style: none;
-}
-
-.main-navigation #main-nav-panel .nav-list #primary-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 3rem;
-  transition: color .25s;
-  font-family: "Windsor BT", "serif";
-}
-
-.main-navigation #main-nav-panel .nav-list #primary-menu li a:visited {
-  color: white;
-}
-
-.main-navigation #main-nav-panel .nav-list #primary-menu li a:hover {
-  color: orangered;
-}
-
-.main-navigation #main-nav-panel .social-links {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  position: absolute;
-}
-
-.main-navigation #main-nav-panel .social-links .social-link {
+.nav-container .site-navigation {
   position: relative;
-  display: inline-block;
-  border-radius: .5rem;
-  font-size: 1.25rem;
-  font-family: "Windsor BT", "serif";
-  margin-right: 1rem;
-}
-
-.main-navigation #main-nav-panel .social-links .social-link a {
-  color: white;
-  text-decoration: none;
-  transition: color .25s ease;
-}
-
-.main-navigation #main-nav-panel .social-links .social-link a:visited {
-  color: white;
-}
-
-.main-navigation:hover #main-nav-panel {
-  width: 33vw;
-}
-
-.main-navigation:hover .main-menu-button {
-  color: white;
-  margin-right: 21.5vw;
-}
-
-.main-navigation:hover hr {
-  color: white;
-  width: 27vw;
+  z-index: 2000;
 }
 
 /*--------------------------------------------------------------
@@ -774,7 +654,6 @@ a:hover, a:active {
   word-wrap: normal !important;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
-
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -860,7 +739,6 @@ a:hover, a:active {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
-
 .widget select {
   max-width: 100%;
 }
@@ -952,13 +830,11 @@ object {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-
-.wp-caption img[class*="wp-image-"] {
+.wp-caption img[class*=wp-image-] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
@@ -980,35 +856,27 @@ object {
   vertical-align: top;
   width: 100%;
 }
-
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
-
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
-
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
-
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
-
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
-
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
-
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
-
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
@@ -1025,25 +893,20 @@ body {
   position: relative;
 }
 
-body.logged-in .main-navigation, body.logged-in #main-nav-panel {
-  top: 32px;
-}
-
 .entry-content {
   margin: 0 0 5rem 0;
-  padding: 3rem;
 }
 
-header .entry-title {
-  margin-left: 5rem;
-  font-family: "Windsor BT", "serif";
+.site-branding {
+  position: fixed;
+  z-index: 20;
+  padding: 3rem;
 }
 
 .quote-block {
   position: relative;
   height: 100vh;
 }
-
 .quote-block .quote-main {
   display: block;
   position: absolute;
@@ -1051,18 +914,17 @@ header .entry-title {
   right: 30rem;
   font-size: 3rem;
   z-index: 10;
-  -webkit-transition: .25s -webkit-filter linear;
-  -moz-transition: .25s -moz-filter linear;
-  -moz-transition: .25s filter linear;
-  -ms-transition: .25s -ms-filter linear;
-  -o-transition: .25s -o-filter linear;
-  transition: .25s filter linear, .25s -webkit-filter linear;
+  -webkit-transition: 0.25s -webkit-filter linear;
+  -moz-transition: 0.25s -moz-filter linear;
+  -moz-transition: 0.25s filter linear;
+  -ms-transition: 0.25s -ms-filter linear;
+  -o-transition: 0.25s -o-filter linear;
+  transition: 0.25s filter linear, 0.25s -webkit-filter linear;
   filter: blur(0);
   cursor: pointer;
   animation-name: slideinright;
   animation-duration: 6s;
 }
-
 @media (max-width: 1024px) {
   .quote-block .quote-main {
     width: 50vw;
@@ -1070,15 +932,12 @@ header .entry-title {
     top: 200px;
   }
 }
-
 .quote-block .quote-main span {
   color: #ff8900;
 }
-
 .quote-block .quote-main.blurry {
   filter: blur(3px);
 }
-
 @keyframes slideinright {
   0% {
     right: 40rem;
@@ -1089,34 +948,30 @@ header .entry-title {
     opacity: 1;
   }
 }
-
 .quote-block .quote-name {
   position: absolute;
   top: 27rem;
   right: 27rem;
   z-index: 5;
-  -webkit-transition: .25s -webkit-filter linear;
-  -moz-transition: .25s -moz-filter linear;
-  -moz-transition: .25s filter linear;
-  -ms-transition: .25s -ms-filter linear;
-  -o-transition: .25s -o-filter linear;
-  transition: .25s filter linear, .25s -webkit-filter linear;
+  -webkit-transition: 0.25s -webkit-filter linear;
+  -moz-transition: 0.25s -moz-filter linear;
+  -moz-transition: 0.25s filter linear;
+  -ms-transition: 0.25s -ms-filter linear;
+  -o-transition: 0.25s -o-filter linear;
+  transition: 0.25s filter linear, 0.25s -webkit-filter linear;
   filter: blur(8px);
   animation-name: slideinleft;
   animation-duration: 6s;
 }
-
 @media (max-width: 1024px) {
   .quote-block .quote-name {
     top: 400px;
     font-size: 20px;
   }
 }
-
 .quote-block .quote-name.blurry {
   filter: blur(0px);
 }
-
 @keyframes slideinleft {
   0% {
     right: 20rem;
@@ -1127,7 +982,6 @@ header .entry-title {
     opacity: 1;
   }
 }
-
 .quote-block .quote-image {
   position: absolute;
   margin: auto;
@@ -1136,17 +990,16 @@ header .entry-title {
   right: 0;
   z-index: 0;
   width: 40%;
-  -webkit-transition: .25s -webkit-filter linear;
-  -moz-transition: .25s -moz-filter linear;
-  -moz-transition: .25s filter linear;
-  -ms-transition: .25s -ms-filter linear;
-  -o-transition: .25s -o-filter linear;
-  transition: .25s filter linear, .25s -webkit-filter linear;
+  -webkit-transition: 0.25s -webkit-filter linear;
+  -moz-transition: 0.25s -moz-filter linear;
+  -moz-transition: 0.25s filter linear;
+  -ms-transition: 0.25s -ms-filter linear;
+  -o-transition: 0.25s -o-filter linear;
+  transition: 0.25s filter linear, 0.25s -webkit-filter linear;
   filter: blur(8px);
   animation-name: slideinleft2;
   animation-duration: 6s;
 }
-
 @media (max-width: 1024px) {
   .quote-block .quote-image {
     width: 100vw;
@@ -1157,11 +1010,9 @@ header .entry-title {
     width: 100vw;
   }
 }
-
 .quote-block .quote-image.blurry {
   filter: blur(0px);
 }
-
 @keyframes slideinleft2 {
   0% {
     right: -8rem;
@@ -1178,3 +1029,23 @@ footer {
   position: relative;
   z-index: 20;
 }
+
+.main-slider {
+  position: relative;
+}
+.main-slider .slide {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+}
+.main-slider .slide .slide-blurb {
+  color: white;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */

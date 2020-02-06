@@ -120,13 +120,18 @@ add_action( 'widgets_init', 'frank_widgets_init' );
  * Enqueue scripts and styles.
  */
 function frank_scripts() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' ); 
-    
-    wp_enqueue_script( 'jquery.min' , 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
-    
-    wp_enqueue_script( 'frank', get_template_directory_uri() . '/js/frank.js');
 
-	wp_enqueue_script( 'frank-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	$cachebust = date("m.d.y");
+
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', $cachebust);
+	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css');
+    
+	wp_enqueue_script( 'jquery.min' , 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+    
+	wp_enqueue_script( 'frank', get_template_directory_uri() . '/js/frank.js', $cachebust, true);
+	wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
+
+	// wp_enqueue_script( 'frank-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'frank-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

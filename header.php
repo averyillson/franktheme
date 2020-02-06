@@ -25,24 +25,39 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'frank' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php the_custom_logo(); ?>
-		</div><!-- .site-branding -->
+    <div class="container-fluid">
+        <div class="row justify-content-between">
 
-		<nav id="site-navigation" class="main-navigation">
-            <a href="" class="main-menu-button">MENU</a>
-            <hr>
-            <div id="main-nav-panel">
-                <div class="nav-list">
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'menu-1',
-                        'menu_id'        => 'primary-menu',
-                    ) );
-                    ?>
+            <div class="col-3"><a href="/" ><div class="site-branding"><?php include( get_stylesheet_directory() . '/images/frank-branding-orange.svg' ); ?></div></a><!-- .site-branding --></div>
+
+            <div class="col-2"><button id="site-navigation-toggle" type="button" class="btn btn-link">Menu</button></div>
+            
+        </div>
+
+        <div class="nav-container">
+            <nav id="site-navigation" class="main-navigation">
+                <button id="site-navigation-close" type="button" class="btn btn-link">Close</button>
+
+                <h2>Menu</h2>
+                <div class="divider"></div>
+
+                <div class="main-nav-panel">
+                    <div class="nav-list">
+
+                        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', ) ); ?>
+
+                    </div>
+                </div>
+
+                <div class="secondary-nav-panel">
+
                     <?php the_field('nav_info','option'); ?>
-                    
-                    <?php if(have_rows('social_links','option')): ?>
+
+                </div>
+
+                <div class="third-nav-panel">
+                    <?php if (have_rows('social_links','option')): ?>
+
                     <ul class="social-links">
                         <?php $linknum==1; ?>
                         <?php while(have_rows('social_links','option')): the_row(); ?>
@@ -51,11 +66,14 @@
                         <?php $linknum++; ?>
                         <?php endwhile; ?>
                     </ul>
+
                     <?php endif; ?>
-                    
                 </div>
-            </div>
-		</nav><!-- #site-navigation -->
+            </nav><!-- #site-navigation -->
+        </div>
+
+    </div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
