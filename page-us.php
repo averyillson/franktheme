@@ -1,26 +1,20 @@
 <?php
 /**
- * Template Name: Work Page Template
+ * Template Name: Us Page Template
  */
 
 get_header();
 ?>
 
 
-<?php get_template_part('template-parts/content','hero'); ?>
+<?php get_template_part('template-parts/content','hero-secondary'); ?>
 
 	<div id="primary" class="content-area">
             
-			<div class="container-fluid">
+			<div class="container">
 
 				<div class="row">
-				
-					<div class="col-3">
-                        <h2><?php the_title(); ?></h2>
-                        <?php get_template_part('template-parts/sidebar','work'); ?>
-					</div>
-
-					<div class="col-9">
+					<div class="col-10">
 					
 						<?php
 							while ( have_posts() ) :

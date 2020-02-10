@@ -9,10 +9,6 @@ get_header();
 	<?php get_template_part('template-parts/content','hero'); ?>
 
 	<div id="primary" class="content-area">
-
-
-
-		<main id="main" class="site-main">
             
 			<div class="container-fluid">
 
@@ -35,7 +31,6 @@ get_header();
 
 			</div>
 
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
