@@ -385,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: black;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -462,7 +462,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: white;
   /* Fallback for when there is no custom background color defined. */
   overflow-x: hidden;
 }
@@ -566,7 +566,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
+  color: #1d384b;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
@@ -587,7 +587,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus {
-  color: #111;
+  color: #0e1b24;
 }
 
 select {
@@ -605,13 +605,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #ee562a;
 }
 a:visited {
-  color: purple;
+  color: #ee562a;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #cf3a10;
 }
 a:focus {
   outline: thin dotted;
@@ -714,7 +714,7 @@ a:hover, a:active {
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: white;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -942,6 +942,119 @@ object {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+.hero {
+  height: 432px;
+  position: relative;
+  background-color: #fadfc5;
+  padding: 2rem 3rem;
+}
+.hero .hero-container {
+  height: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.hero .hero-container .hero-headline {
+  flex: 0 1 auto;
+}
+.hero .hero-container .hero-copy {
+  flex: 0 1 auto;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.no-sidebar .site-main {
+  margin-right: 0;
+}
+
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%;
+}
+
+.site-main {
+  margin: 0 25% 0 0;
+}
+
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.no-sidebar .site-main {
+  margin-right: 0;
+}
+
+.content-area {
+  float: right;
+  margin: 0 0 0 -25%;
+  width: 100%;
+}
+
+.site-main {
+  margin: 0 0 0 25%;
+}
+
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.no-sidebar .site-main {
+  margin-right: 0;
+}
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+.team {
+  position: relative;
+}
+.team .team-profile-alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.team .team-profile-alt:hover {
+  transition: all 0.2s;
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
